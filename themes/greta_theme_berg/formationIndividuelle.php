@@ -5,5 +5,4 @@
     Template Post Type: formation, page
 */
 
-
 ?>

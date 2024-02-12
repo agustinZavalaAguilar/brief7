@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+
 <?php 
 /* 
     Template Name: Formations
@@ -24,10 +35,24 @@ $my_query = new WP_Query( $Requete_SQL );
 
 // 3. On lance la boucle !
 $index = 0 ;
+
+?>
+
+
+<section>
+
+
+</section>
+<?php 
+
+
+
+
 if( $my_query->have_posts() ) : while( $my_query->have_posts() ) : $my_query->the_post();
 
     echo  $formations[$index]['acf']['intitule_de_la_formation'];
-    echo  $formations[$index]['acf']['date_de_debut_formation'];
+    echo  $formations[$index]['acf']['date_debut'];
+    echo  $formations[$index]['acf']['date_fin_formation'];
     ?> <br> <?php
     the_post_thumbnail();
     the_excerpt();
@@ -35,7 +60,9 @@ if( $my_query->have_posts() ) : while( $my_query->have_posts() ) : $my_query->th
 
 endwhile;
 endif;
-
+?>
+    </body>
+</html>
 
 
 ?>
