@@ -8,6 +8,6 @@
 </head>
 
 <body>
-    <h1 class="text-bg-danger ">C'est ici que les grandes choses se passent!</h1>
+    
 </body>
 </html>
