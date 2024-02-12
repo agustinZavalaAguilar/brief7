@@ -7,4 +7,12 @@ Description: Le thème du Greta Gard-Lozere
 Requires at least: WordPress 5.0
 Version: 1.0
 */
+.couleur-jaune-custom {
+    background-color: #f5ed21;
+    color : black
+}
+.fond-ecran-custom {
 
+   background-image: url(images/fond-carte.png);
+   background-size: cover;
+}
