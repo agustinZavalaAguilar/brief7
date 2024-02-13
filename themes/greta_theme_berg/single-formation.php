@@ -31,31 +31,47 @@ $description = get_the_content();
 <?php include('header.php'); ?>
 
 <!---------titre-------------------------------->
-<body>
-    <h1>
-        <?= $intitule ?>
-    </h1>
-<!---------Description--------------------------->
-    <section>
-        <div>
-            <p><?= $description ?></p>
+<body>  
+    <div class='container'>
+    <div class='row d-flex flex-column flex-md-row align-items-center'>
+        <div class="col-8">
+            <h1>
+                <?= $intitule ?>
+            </h1>
+        <!---------Description--------------------------->
+            <section>
+                <div>
+                    <p><?= $description ?></p>
+                </div>
+            </section>
         </div>
-    </section>
 <!---------List détails-------------------------->
-    <ul>
-        <?php 
-        if (!empty($debut) && !empty($fin)) {
-            echo '<li> Dates de formation: du ' . $debut . ' au ' . $fin . '</li>';
-        } else {
-            echo '<li>' . $dureeFormation . '</li>';
-        }        
-        ?>
+        <div class="col-4">
+        <ul>
+            <?php 
+            if (!empty($debut) && !empty($fin)) {
+                echo '<li> Dates de formation: du ' . $debut . ' au ' . $fin . '</li>';
+            } else {
+                echo '<li>' . $dureeFormation . '</li>';
+            }        
+            ?>
 
-        <li><?= 'Lieu de formation: ' . $ville . ', ' . $lieu ?></li>
-        <li><?= 'Contact: ' . $contactPrenom . ' ' . $contactNom ?></li>
-        <li><?= 'Téléphone: ' . $tel ?></li>
-        <li><?= 'Voir promotions précedentes'?></li>        
-    </ul>
-    
+            <li><?= 'Lieu de formation: ' . $ville . ', ' . $lieu ?></li>
+            <li><?= 'Contact: ' . $contactPrenom . ' ' . $contactNom ?></li>
+            <li><?= 'Téléphone: ' . $tel ?></li>
+            <?php 
+            if(!empty($trombiPromo)){
+                echo '<a href=" ' .  $trombiPromo . ' "> '; 
+                    echo '<li> Voir promotions précedentes </li>'; 
+                echo '</a>';
+            }
+            ?>    
+        </ul>
+        <a href="contact.php">
+            <button type="submit">S'inscrire</button>
+        </a>
+        </div>
+        </div>
+    </div>
 </body>
 </html>
