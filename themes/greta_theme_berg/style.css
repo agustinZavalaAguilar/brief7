@@ -16,4 +16,8 @@ Description: Le thème du Greta Gard-Lozere
 Requires at least: WordPress 5.0
 Version: 1.0
 */
+header{
+    font-family: 'Mina', sans-serif;
+    font-size: 18px;
+}
 
