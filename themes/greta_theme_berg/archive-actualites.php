@@ -16,7 +16,7 @@
 
 <?php 
 /* 
-    Template Name: Archive formation
+    Template Name: Archive Actu
     Template Post Type:  page
 */
 
@@ -30,7 +30,7 @@ $formations = json_decode($data , true);
 /*Recupère les champs créees dans ACF */
 
 $Requete_SQL = array (
-    'post_type' => 'formation'
+    'post_type' => 'actualite'
 );
 
 $my_query = new WP_Query( $Requete_SQL );
@@ -41,43 +41,38 @@ $index = 0 ;
 ?>
 
 
-<section class="main section">
-    <div class="container">
-        <h1 class=" p-4 pb-2 border-bottom  border-black border-5  mina-regular "> Nos formations </h1>
+<section class="main section liste_actu">  
     
-        <?php if( $my_query->have_posts() ) : while( $my_query->have_posts() ) : $my_query->the_post(); ?>
-        <div class="row fond-ecran-custom mt-5 rounded-bottom">
-            <div class="col-3 d-flex justify-content-center align-items-center  ">
-            
-                <?php  the_post_thumbnail(); ?>
-            </div>
-            <div class="col-9 p-0">
-                
-                <h2 class="m-0">
-                    <div>
-                    <i class="fa-solid fa-graduation-cap"></i><?php  the_title(); ?></h2>
-     
-                <i class="fa-regular fa-calendar-days"></i>
-                <?php 
-                // Mettre la date au format francais
-                
-                echo date('d/m/Y', strtotime($formations[$index]['acf']['date_debut']));?>
-                <?= "->" ?>
-                <?php  echo date('d/m/Y', strtotime($formations[$index]['acf']['date_fin_formation'])); ?>
-                <?php the_excerpt() ?>
 
-                <div class="d-flex align-items-end justify-content-end ">
-                    <a class="w-50" href="<?php the_permalink() ?>"><buttun class="btn btn-primary w-100 couleur-jaune-custom " > En savoir plus ></buttun></a>
+    <div class="container ">
+      <h1 class=" p-4 pb-2 border-bottom  border-black border-5  mina-regular "><i class="fa-regular fa-newspaper"></i> Nos Actualités</h1>
+        
+        <div class="row d-flex flex-row justify-content-center "> 
+      <?php if( $my_query->have_posts() ) : while( $my_query->have_posts() ) : $my_query->the_post(); ?>
+           
+                <div class="col-4 d-flex flex-column  justify-content-between  my-5 "> 
+                    <?php if (empty(get_the_post_thumbnail())){ ?>
+                            <img  width="100%" height="200" src="<?php echo bloginfo('template_directory')."/images/image_actu_par_défaut.png"?>"  />
+                            <?php 
+
+
+                        }else{
+                            the_post_thumbnail();
+                        } ?>
+                    <div class="d-flex flex-row justify-content-between align-items-center border-bottom  border-black border-2 p-3">
+                        <h4 class="pe-2"> <?php  the_title(); ?> </h4> 
+                        <a href="<?php the_permalink() ?>"><i class="fa-regular fa-square-caret-right"></i></a>
+                    </div>
+                       
                 </div>
-
-            </div>
             
-        </div>
+      
         <?php 
         endwhile;
         endif;
         ?>
     </div>
+</div>
 </section>
 <?php  ?>
 

@@ -1,3 +1,4 @@
+
 /*
 Theme Name: greta_theme_berg
 Theme URI: https://capitainewp.io/
@@ -31,3 +32,15 @@ footer ul li a{
     text-decoration: none;
     color: black;
 }
+.liste_actu img {
+    width: 100%;
+    height: 200px;
+
+}
+.liste_actu i {
+    font-size: 40px;
+}
+
+
+
+
