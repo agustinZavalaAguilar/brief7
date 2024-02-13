@@ -7,17 +7,19 @@ Description: Le thème du Greta Gard-Lozere
 Requires at least: WordPress 5.0
 Version: 1.0
 */
-/*
-Theme Name: greta_theme_berg
-Theme URI: https://capitainewp.io/
-Author: Greta Von Teese
-Author URI: 
-Description: Le thème du Greta Gard-Lozere
-Requires at least: WordPress 5.0
-Version: 1.0
-*/
+
+
 header{
     font-family: 'Mina', sans-serif;
     font-size: 18px;
 }
 
+.couleur-jaune-custom {
+    background-color: #f5ed21;
+    color : black
+}
+.fond-ecran-custom {
+  
+   background-image: url(images/fond-carte.png);
+   background-size: cover;
+}
