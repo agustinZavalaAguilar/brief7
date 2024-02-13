@@ -23,3 +23,11 @@ header{
    background-image: url(images/fond-carte.png);
    background-size: cover;
 }
+footer ul li{
+    list-style: none;
+    
+}
+footer ul li a{
+    text-decoration: none;
+    color: black;
+}
