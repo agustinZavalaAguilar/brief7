@@ -6,6 +6,8 @@ include('header.php')
     <h1 class="text-center text-uppercase">Formez vous avec le greta</h1>
     <a class="d-flex justify-content-center" href=""><button class="btn" type="button">CONTACT</button></a>
 </section>
+    
+
     <!-- section a propos -->
 <section class="propos">
     <div class="container">
@@ -99,8 +101,8 @@ include('header.php')
   <a href=""><img src="<?php echo bloginfo('template_directory')."/images/partner/greta.jpg"?>" alt=""></a>
   <a href=""><img src="<?php echo bloginfo('template_directory')."/images/partner/lozeredep.jpg"?>" alt=""></a>
   <a href=""><img src="<?php echo bloginfo('template_directory')."/images/partner/lozeredev.png"?>" alt=""></a>
-  <a href=""><img src="<?php echo bloginfo('template_directory')."/images/partner/numerique.jpg"?>" alt=""></a>
-  <a href=""><img src="<?php echo bloginfo('template_directory')."/ressources/polen.jpg"?>" alt=""></a>
+  <a href=""><img src="" alt=""></a>
+  <a href=""><img src="<?php echo bloginfo('template_directory')."/images/partner/occitanie.png"?>" alt=""></a>
 </section>
 
 
