@@ -32,27 +32,30 @@ $index = 0 ;
 <section class="main section">
     <div class="container">
         <h1 class=" p-4 pb-2 border-bottom  border-black border-5  mina-regular "> <i class="fa-solid fa-graduation-cap"></i> Nos formations </h1>
-    
+        
         <?php if( $my_query->have_posts() ) : while( $my_query->have_posts() ) : $my_query->the_post(); ?>
-        <div class="row fond-ecran-custom mt-5 rounded-bottom">
-            <div class="col-3 d-flex justify-content-center align-items-center  ">
+        <div class="row fond-ecran-custom mt-5 rounded-bottom  ">
+            <div class="col-3 d-flex justify-content-center align-items-center py-4 ">
             
                 <?php  the_post_thumbnail(); ?>
             </div>
-            <div class="col-9 p-0">
+            <div class="col-9 d-flex flex-column  justify-content-between p-0">
                 
                 <h2 class="m-0">
                     <div>
                    <?php  the_title(); ?></h2>
-     
+                <div>
                 <i class="fa-regular fa-calendar-days"></i>
                 <?php 
-                // Mettre la date au format francais
-                
-                echo date('d/m/Y', strtotime($formations[$index]['acf']['date_debut']));?>
-                <?= "->" ?>
-                <?php  echo date('d/m/Y', strtotime($formations[$index]['acf']['date_fin_formation'])); ?>
-                <?php the_excerpt() ?>
+                    // Mettre la date au format francais
+                    
+                    echo date('d/m/Y', strtotime($formations[$index]['acf']['date_debut']));?>
+                    <?= "->" ?>
+                    <?php  echo date('d/m/Y', strtotime($formations[$index]['acf']['date_fin_formation'])); ?>
+                </div>
+                <?php $resumer =  get_the_excerpt()."[...]";
+                echo $resumer ;
+                ?>
 
                 <div class="d-flex align-items-end justify-content-end ">
                     <a class="w-50" href="<?php the_permalink() ?>"><buttun class="btn btn-primary w-100 couleur-jaune-custom " > En savoir plus ></buttun></a>

@@ -134,6 +134,21 @@ height: 900px;
 .justifier-contenu-custom p {
     text-align : justify
 }
+.formulaire_contact p {
+
+}
+.bouton_envoyer p {
+    display: block;
+
+}
+.info_contact i{
+    width: 20px;
+    
+}
+.fond_contact{
+
+    background-image: url(images/fond_contact.jpg);
+}
 
 .image_a_propos img{
     height: 10px;
