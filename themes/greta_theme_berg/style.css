@@ -129,7 +129,9 @@ height: 900px;
     background-color: orangered;
 }
 
-
+.couleur_orange_rouge {
+    color: orangered;
+}
 
 .justifier-contenu-custom p {
     text-align : justify
@@ -159,6 +161,19 @@ height: 900px;
 .mentions-legales img {
     height: 100%;
     width: 100%;
+}
+.caroussel-custom img{
+    min-width: 100%;
+    height: 500px;
+
+}
+
+.carte_actu p {
+    text-align: justify;
+}
+carte_actu img{
+    height: 122px;
+    width: 200px;
 }
 
 
