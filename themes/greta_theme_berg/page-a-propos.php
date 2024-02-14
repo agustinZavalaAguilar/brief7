@@ -1,4 +1,6 @@
 
+
+    
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -9,11 +11,15 @@
 
     <body>
         <?php include('header.php'); ?>
-        <div id="container">
-            <section>
-            <?= the_content(); ?>
-            </section>            
+
+        <div class="container">
+            <div class="row">
+                <div class="image_a_propos">
+                    <div class="img-fluid"><?php the_content();?></div> 
+                </div>
+            </div>
         </div>
+
         <?php include('footer.php'); ?>
     </body>
     </html>
