@@ -59,7 +59,7 @@ include('header.php')
 <!-- Section cards -->
 <section class="actu">
   <h2 class="actu__title text-center text-uppercase mb-4 mt-4">Les news du greta</h2>
-<div class="row row-cols-1 row-cols-md-3 g-4">
+<div class="row row-cols-1 row-cols-md-3 g-4 m-0 p-0">
   <div class="col">
     <div class="card h-100 ">
       <img src="<?php echo bloginfo('template_directory')."/images/actualités/theatre.jpg"?>" class="card-img-top" alt="...">

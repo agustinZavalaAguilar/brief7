@@ -15,11 +15,11 @@ header{
     font-family: 'Mina', sans-serif;
     font-size: 18px;
     font-weight: bold;
-    margin: 5px;
+
 } 
 .nav-link{
     color: orangered;
-    margin: 5px;
+   
 }
 
 .couleur-jaune-custom {
@@ -134,7 +134,8 @@ height: 900px;
 .justifier-contenu-custom p {
     text-align : justify
 }
-.formulaire_contact p {
+.formulaire_contact button {
+    background-color: #ff4500;
 
 }
 .bouton_envoyer p {
@@ -159,6 +160,7 @@ height: 900px;
     height: 100%;
     width: 100%;
 }
+
 
 
 
