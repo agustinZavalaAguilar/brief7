@@ -6,6 +6,9 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mina&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -19,7 +22,7 @@
 <header class="w-100">
 <div class="row">
     <div class="col-sm w-50">
-      <img src="<?php echo bloginfo('template_directory')."/ressources/greta.png"?>" alt="occitanie">
+      <img class="w-25 ms-4" src="<?php echo bloginfo('template_directory')."/images/logo.png"?>" alt="occitanie">
     </div>
     <div class="col-sm w-50 d-flex justify-content-end">
             <nav class=" navbar navbar-expand-lg">
@@ -41,7 +44,7 @@
                     <a class="nav-link" href="<?php echo bloginfo('url')."/formations"?>"">Formations</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo bloginfo('url')."/contact"?>"">Contact</a>
+                    <a class="nav-link me-4" href="<?php echo bloginfo('url')."/contact"?>"">Contact</a>
                 </li>      
                 </ul>
             </div>

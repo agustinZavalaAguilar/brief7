@@ -14,6 +14,12 @@ Version: 1.0
 header{
     font-family: 'Mina', sans-serif;
     font-size: 18px;
+    font-weight: bold;
+    margin: 5px;
+} 
+.nav-link{
+    color: orangered;
+    margin: 5px;
 }
 
 .couleur-jaune-custom {
@@ -44,19 +50,46 @@ footer ul li a{
 }
 .hero_banner{
     
-    background-image:url('images/hero-banner.png');
+    background-image:url('images/IArobot__w1200.jpg');
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
 }
+.hero_banner h1{
+    font-size: 100px;
+    color: white;
+    padding-top: 400px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+      
+      
+    
+}
  .hero_banner img{
 width: 100%;
 height: 900px;
-} 
-
-.apropos{
- font-size: 27px;
+}
+.hero_banner a{
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 48px;
+}
+.hero_banner button{
+    height: 80px;
+    width: 150px;
+    background-color: orangered;
+}
+.hero_banner button:hover{
+    height: 80px;
+    width: 150px;
+    background-color: orangered;
+}
+.form p{
+    margin-top: 65px;
 }
 
 .justifier-contenu-custom p {
