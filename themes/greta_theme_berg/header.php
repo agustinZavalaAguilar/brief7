@@ -13,7 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="<?php echo esc_url( get_stylesheet_uri() ); ?>" type="text/css" />
-    
+    <script src="https://kit.fontawesome.com/0a3766d4f1.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <header class="w-100">
@@ -29,19 +29,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="">Page d'accueil</a>
+                    <a class="nav-link" href="<?php echo bloginfo('url')."/home.php"?>">Page d'accueil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">Actualités</a>
+                    <a class="nav-link" href="<?php echo bloginfo('url')."/actualites"?>">Actualités</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo bloginfo('url')."/apropos.php"?>">A Propos</a>
+                    <a class="nav-link" href="<?php echo bloginfo('url')."/a-propos.php"?>">A Propos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">Formations</a>
+                    <a class="nav-link" href="<?php echo bloginfo('url')."/formations"?>"">Formations</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">Contact</a>
+                    <a class="nav-link" href="<?php echo bloginfo('url')."/contact"?>"">Contact</a>
                 </li>      
                 </ul>
             </div>

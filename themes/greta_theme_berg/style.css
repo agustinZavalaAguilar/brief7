@@ -59,6 +59,10 @@ height: 900px;
  font-size: 27px;
 }
 
+.justifier-contenu-custom p {
+    text-align : justify
+}
+
 
 
 
