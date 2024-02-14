@@ -57,9 +57,9 @@ footer ul li a{
     height: 100vh;
 }
 .hero_banner h1{
-    font-size: 100px;
+    font-size: 50px;
     color: white;
-    padding-top: 400px;
+    padding-top: 300px;
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-style: normal;
@@ -88,9 +88,32 @@ height: 900px;
     width: 150px;
     background-color: orangered;
 }
-.form p{
-    margin-top: 65px;
+
+.para1{
+    margin-top: 20px;
 }
+.para2{
+    margin-top: 20px;
+}
+.propos h5{
+    color:orangered;
+}
+.propos h2 {
+    font-size: 48px;
+}
+.title__formations{
+    font-size: 48px;
+}
+.button__formations a{
+    text-decoration: none;
+}
+.button__formations button{
+    background-color: orangered;
+}
+.button__formations button:hover{
+    background-color: orangered;
+}
+
 
 .justifier-contenu-custom p {
     text-align : justify
