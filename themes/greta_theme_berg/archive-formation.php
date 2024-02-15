@@ -57,7 +57,7 @@ $index = 0 ;
                 echo $resumer ;
                 ?>
 
-                <div class="d-flex align-items-end justify-content-end ">
+                <div class="d-flex align-items-end justify-content-end btn_liste_form ">
                     <a class="" href="<?php the_permalink() ?>"><buttun class=" btn  buttonform" > En savoir plus ></buttun></a>
                 </div>
                 <?php $index = $index +1; ?>
