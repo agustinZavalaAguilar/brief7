@@ -91,16 +91,16 @@ $description = get_the_content();
 
             <li>
             <?php 
-            $parser = str_split( $tel,2);
+            $Tab_num = str_split( $tel,2);
             
-            for($index = 0 ; $index < count($parser) ; $index++){
-                $parser[$index] = $parser[$index]." ";
+            for($index = 0 ; $index < count($Tab_num) ; $index++){
+                $Tab_num[$index] = $Tab_num[$index]." ";
             }
             
-            $tel = implode($parser)
+            $tel_espace = implode($Tab_num)
             ?>
             <i class="fa-solid fa-phone pe-4"></i> 
-                <?= $tel ?></li>
+            <a href="tel:<?= $tel ?>"><?= $tel_espace ?></a></li>
             <?php 
             if(!empty($trombiPromo)){
                 echo '<a href=" ' .  $trombiPromo . ' "> '; 
