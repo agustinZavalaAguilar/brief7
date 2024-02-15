@@ -21,7 +21,7 @@
 </head>
 <body>
 <header class="w-100">
-<div class="row">
+<div class="row m-0 p-0">
     <div class="col-sm w-50">
       <img class="w-25 ms-4" src="<?php echo bloginfo('template_directory')."/images/logo.png"?>" alt="occitanie">
     </div>
