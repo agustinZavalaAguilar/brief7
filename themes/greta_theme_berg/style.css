@@ -115,8 +115,9 @@ height: 900px;
     background-color: orangered;
 }
 .formations h5{
-    margin-bottom: 425px;
-    background-color:purple;
+    margin-bottom: 410px;
+    background-color: black;
+    border-radius: 7px;
     
 
 }
