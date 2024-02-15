@@ -33,11 +33,17 @@ $description = get_the_content();
 <!---------titre-------------------------------->
 <body>  
     <div class='container'>
-    <div class='row d-flex flex-column flex-md-row align-items-center'>
+        <div class="row my-4">
+            <div class="col-12">
+                <h2 class=" mina-regular m-0 d-flex justify-content-center align-items-center  border-3 border-bottom border-black pb-3"><i class="fa-solid fa-graduation-cap pe-4 "></i><?php the_title() ?></h2>
+            </div>
+        </div>
+    <div class='row d-flex flex-column flex-md-row align-items-start'>
+
         <div class="col-8">
-            <h1>
-                <?= $intitule ?>
-            </h1>
+    
+                
+            </h2>
         <!---------Description--------------------------->
             <section>
                 <div>
@@ -48,15 +54,24 @@ $description = get_the_content();
 <!---------List détails-------------------------->
         <div class="col-4">
         <ul>
+            <div class="d-flex justify-content-center "><?php the_post_thumbnail() ?></div>
             <?php 
-            if (!empty($debut) && !empty($fin)) {
-                echo '<li> Dates de formation: du ' . $debut . ' au ' . $fin . '</li>';
-            } else {
-                echo '<li>' . $dureeFormation . '</li>';
+            if (!empty($debut) && !empty($fin)) { ?>
+                <li>
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <?php 
+                    echo  $debut . ' au ' . $fin ;
+                    ?>
+                </li>
+                
+            <?php } else {
+                echo '<li></i>' . $dureeFormation . '</li>';
             }        
             ?>
 
-            <li><?= 'Lieu de formation: ' . $ville . ', ' . $lieu ?></li>
+            <li>
+                <i class="fa-solid fa-school-flag"></i>
+                <?= 'Lieu de formation: ' . $ville . ', ' . $lieu ?></li>
             <li><?= 'Contact: ' . $contactPrenom . ' ' . $contactNom ?></li>
             <li><?= 'Téléphone: ' . $tel ?></li>
             <?php 
