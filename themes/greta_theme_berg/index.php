@@ -53,11 +53,13 @@ $index = 0
         }?>
 
     <div class="carousel-item <?php echo $imageActive ?>">
-      <a href="<?php the_permalink() ?>"><?php the_post_thumbnail() ?></a>
-      <div class="carousel-caption d-none d-md-block">
-    <h5 class="couleur_orange_rouge text-uppercase "><?php the_title() ?> </h5>
+    <a href="<?php the_permalink() ?>">
+      <?php the_post_thumbnail() ?>
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="couleur_orange_rouge text-uppercase "><?php the_title() ?> </h5>
+        </div> 
+    </a>
    
-  </div>
     </div>
     <?php 
         endwhile;
