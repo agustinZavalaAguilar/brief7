@@ -191,6 +191,7 @@ height: 900px;
 .partner h2{
     font-size: 48px;
 }
+
 .buttonform{
     color: orangered;
     margin-left: 150px;
@@ -244,5 +245,19 @@ height: 900px;
     width: 100%;
 }
 }
+.couleur_btn{
+    background-color: #ff4500;
+}
+
+.info_une_formation ul{
+    list-style: none;
+}
+
+.info_une_formation li{
+    list-style: none;
+    padding-top: 10px;
+}
+
+
 
 
