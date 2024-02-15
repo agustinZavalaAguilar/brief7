@@ -43,7 +43,7 @@ $index = 0
 
 <section class="formations d-flex justify-content-center">
   <div id="carouselExampleControls" class="carousel slide w-50 d-flex justify-content-center" data-bs-ride="carousel">
-  <div class="carousel-inner text-align caroussel-custom">
+  <div class="carousel-inner text-align caroussel-custom ">
   <?php if( $my_query->have_posts() ) : while( $my_query->have_posts() ) : $my_query->the_post(); ?>
     <?php 
         if ($index == 0) {
@@ -53,10 +53,10 @@ $index = 0
         }?>
 
     <div class="carousel-item <?php echo $imageActive ?>">
-      <a href="<?php echo $my_query->post->guid ?>"><?php the_post_thumbnail() ?></a>
+      <a href="<?php the_permalink() ?>"><?php the_post_thumbnail() ?></a>
       <div class="carousel-caption d-none d-md-block">
-    <h5 class="couleur_orange_rouge"><?php the_title() ?> </h5>
-    <p>...</p>
+    <h5 class="couleur_orange_rouge text-uppercase "><?php the_title() ?> </h5>
+   
   </div>
     </div>
     <?php 
@@ -94,9 +94,6 @@ $index = 0
 <section class="actu">
     <div class="justify-content-center d-flex align-items-center ">
         <h2 class="actu__title text-center text-uppercase mb-4 mt-4">Les news du greta</h2>
-        <div class="button__formations ms-5">
-            <a class="d-flex justify-content-center" href="<?php echo bloginfo('url')."/actualites"?>"><button class="btn" type="button">Voir les autres actus ></button></a>
-        </div>
     </div>
   <?php $args = array(
     'post_type' => 'actualite',
@@ -128,18 +125,21 @@ $index = 0 ?>
             }else{
                 $extrait = get_the_excerpt()."[...]" ;
             } ?>
-            <div class="col-4 carte_actu">
+            <div class="col-sm-12 col-md-4 carte_actu">
           
-                <div class= "card h-100 d-flex  justify-content-between" > 
-                     <h5 class="card-title text-center "><?php the_title() ?></h5>
+                <div class= "card h-100 d-flex  justify-content-between p-3" > 
+                     <h5 class="card-title text-center"><?php the_title() ?></h5>
                     <div class="d-flex justify-content-center align-items-center  "><?php  echo $image_en_avant ?></div>
-                    <p><?php echo $extrait ?></p>
+                    <p class="p-3"><?php echo $extrait ?></p>
                     <a class="d-flex justify-content-center" href="<?php echo $my_query->post->guid ?>"><button class="btn" type="button">En savoir plus</button></a>
                 </div>
             </div>
         <?php endwhile;
         endif ; ?>
     </div>
+    <div class="button__formations mt-5 mb-5">
+            <a class="d-flex justify-content-center" href="<?php echo bloginfo('url')."/actualites"?>"><button class="btn" type="button">Voir les autres actus ></button></a>
+        </div>
 </div>
 
 
@@ -187,11 +187,12 @@ $index = 0 ?>
 </div>-->
 </section>
 <section class="partner ">
+  <h2 class="text-center text-uppercase mb-5">Nos partenaires</h2>
 <div class="container d-flex justify-content-between">
     <a href=" https://www.greta-gard.com/"  target="_blank"><img src="<?php echo bloginfo('template_directory')."/images/partner/greta.jpg"?>" alt=""></a>
     <a href="https://lozere.fr/"  target="_blank"><img src="<?php echo bloginfo('template_directory')."/images/partner/lozeredep.jpg"?>" alt=""></a>
     <a href="https://lozere-developpement.com/"  target="_blank"><img src="<?php echo bloginfo('template_directory')."/images/partner/lozeredev.png"?>" alt=""></a>
-    <a href=""  target="_blank"><img src="" alt=""></a>
+    <a href="https://polen-mende.com/" target="_blank"><img src="<?php echo bloginfo('template_directory')."/images/partner/polen.jpg"?>" alt=""></a>
     <a href="https://www.meformerenregion.fr/organismes/greta-cfa-de-lozere-mende"  target="_blank"><img src="<?php echo bloginfo('template_directory')."/images/partner/occitanie.png"?>" alt=""></a>
 </div>
 </section>

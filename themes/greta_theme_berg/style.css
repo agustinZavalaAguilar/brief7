@@ -28,7 +28,7 @@ header{
 }
 .fond-ecran-custom {
   
-   background-image: url(images/fond-carte.png);
+   background-image: url(images/fond_contact.jpg);
    background-size: cover;
 }
 footer ul li{
@@ -114,6 +114,11 @@ height: 900px;
 .button__formations button:hover{
     background-color: orangered;
 }
+.formations h5{
+    margin-bottom: 425px;
+    background-color:purple;
+
+}
 
 .actu__title{
     font-size: 48px;
@@ -174,6 +179,13 @@ height: 900px;
 carte_actu img{
     height: 122px;
     width: 200px;
+}
+.partner{
+    margin-top: 130px;
+    margin-bottom: 30px;
+}
+.partner h2{
+    font-size: 48px;
 }
 
 

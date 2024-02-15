@@ -1,6 +1,7 @@
 
 <footer class="bg-body-tertiary text-center text-lg-start">
   <!-- Copyright -->
+
     <div class="text-center p-3"">
         © 2024 Copyright By Greta Von Teese
     </div>
@@ -17,6 +18,8 @@
         </ul>
     </div>
         
+
+
 </footer>
 
 </body>
