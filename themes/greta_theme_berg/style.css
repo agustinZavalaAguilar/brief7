@@ -192,7 +192,10 @@ height: 900px;
     color: orangered;
     margin-left: 150px;
 }
-
-
+.buttonres i{
+    font-size: 40px;
+    color: orangered;
+    
+}
 
 
