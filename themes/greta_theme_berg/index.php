@@ -140,7 +140,7 @@ $index = 0 ?>
         endif ; ?>
     </div>
     <div class="button__formations mt-5 mb-5">
-            <a class="d-flex justify-content-center" href="<?php echo bloginfo('url')."/actualites"?>"><button class="btn" type="button">Voir les autres actus ></button></a>
+            <a class="d-flex justify-content-center" href="<?php echo bloginfo('url')."/actualites"?>"><button class="btn" type="button">Toutes nos actus ></button></a>
         </div>
 </div>
 
