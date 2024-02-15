@@ -56,7 +56,7 @@ $index = 0
     <a href="<?php the_permalink() ?>">
       <?php the_post_thumbnail() ?>
         <div class="carousel-caption d-none d-md-block">
-          <h5 class="couleur_orange_rouge text-uppercase "><?php the_title() ?> </h5>
+          <h5 class="py-2 couleur_white text-uppercase "><?php the_title() ?> </h5>
         </div> 
     </a>
    
@@ -87,7 +87,7 @@ $index = 0
 
 </section>
 <div class="button__formations mt-5 mb-5">
-<a class="d-flex justify-content-center" href=""><button class="btn" type="button">Voir les autres formations</button></a>
+<a class="d-flex justify-content-center" href=""><button class="btn" type="button">Toutes nos formations</button></a>
 </div>
 
 
@@ -191,13 +191,14 @@ $index = 0 ?>
 <section class="partner ">
   <h2 class="text-center text-uppercase mb-5">Nos partenaires</h2>
 <div class="container d-flex justify-content-between">
-    <a href=" https://www.greta-gard.com/"  target="_blank"><img src="<?php echo bloginfo('template_directory')."/images/partner/greta.jpg"?>" alt=""></a>
+    <a href="https://www.greta-gard.com/"  target="_blank"><img src="<?php echo bloginfo('template_directory')."/images/partner/greta.1.jpg"?>" alt=""></a>
     <a href="https://lozere.fr/"  target="_blank"><img src="<?php echo bloginfo('template_directory')."/images/partner/lozeredep.jpg"?>" alt=""></a>
     <a href="https://lozere-developpement.com/"  target="_blank"><img src="<?php echo bloginfo('template_directory')."/images/partner/lozeredev.png"?>" alt=""></a>
     <a href="https://polen-mende.com/" target="_blank"><img src="<?php echo bloginfo('template_directory')."/images/partner/polen.jpg"?>" alt=""></a>
     <a href="https://www.meformerenregion.fr/organismes/greta-cfa-de-lozere-mende"  target="_blank"><img src="<?php echo bloginfo('template_directory')."/images/partner/occitanie.png"?>" alt=""></a>
 </div>
 </section>
+
 
 
 

@@ -31,13 +31,15 @@ header{
    background-image: url(images/fond_contact.jpg);
    background-size: cover;
 }
-footer ul li{
-    list-style: none;
+
+
+.footlink a{
     
+    color:black;
 }
-footer ul li a{
-    text-decoration: none;
-    color: black;
+footer{
+    background-color: rgba(38, 38, 36, 0.087);
+    font-size: 20px;
 }
 .liste_actu img {
     width: 100%;
@@ -115,8 +117,9 @@ height: 900px;
     background-color: orangered;
 }
 .formations h5{
-    margin-bottom: 425px;
-    background-color:purple;
+    margin-bottom: 410px;
+    background-color: black;
+    border-radius: 7px;
     
 
 }
@@ -183,7 +186,7 @@ height: 900px;
 }
 .partner{
     margin-top: 130px;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
 }
 .partner h2{
     font-size: 48px;
@@ -192,7 +195,10 @@ height: 900px;
     color: orangered;
     margin-left: 150px;
 }
-
-
+.buttonres i{
+    font-size: 40px;
+    color: orangered;
+    
+}
 
 
