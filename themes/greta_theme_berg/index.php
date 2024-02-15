@@ -191,13 +191,14 @@ $index = 0 ?>
 <section class="partner ">
   <h2 class="text-center text-uppercase mb-5">Nos partenaires</h2>
 <div class="container d-flex justify-content-between">
-    <a href=" https://www.greta-gard.com/"  target="_blank"><img src="<?php echo bloginfo('template_directory')."/images/partner/greta.jpg"?>" alt=""></a>
+    <a href="https://www.greta-gard.com/"  target="_blank"><img src="<?php echo bloginfo('template_directory')."/images/partner/greta.1.jpg"?>" alt=""></a>
     <a href="https://lozere.fr/"  target="_blank"><img src="<?php echo bloginfo('template_directory')."/images/partner/lozeredep.jpg"?>" alt=""></a>
     <a href="https://lozere-developpement.com/"  target="_blank"><img src="<?php echo bloginfo('template_directory')."/images/partner/lozeredev.png"?>" alt=""></a>
     <a href="https://polen-mende.com/" target="_blank"><img src="<?php echo bloginfo('template_directory')."/images/partner/polen.jpg"?>" alt=""></a>
     <a href="https://www.meformerenregion.fr/organismes/greta-cfa-de-lozere-mende"  target="_blank"><img src="<?php echo bloginfo('template_directory')."/images/partner/occitanie.png"?>" alt=""></a>
 </div>
 </section>
+
 
 
 

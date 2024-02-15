@@ -31,13 +31,17 @@ header{
    background-image: url(images/fond_contact.jpg);
    background-size: cover;
 }
+
 footer ul li{
     list-style: none;
     
 }
 footer ul li a{
     text-decoration: none;
-    color: black;
+    color:black;
+}
+footer{
+    background-color: rgba(38, 38, 36, 0.087);
 }
 .liste_actu img {
     width: 100%;
@@ -184,7 +188,7 @@ height: 900px;
 }
 .partner{
     margin-top: 130px;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
 }
 .partner h2{
     font-size: 48px;
