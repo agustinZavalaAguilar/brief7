@@ -12,10 +12,13 @@
     <body>
         <?php include('header.php'); ?>
 
-        <div class="container">
-            <div class="row">
-                <div class="image_a_propos">
-                    <div class="img-fluid"><?php the_content();?></div> 
+        <div class="container a_propos">
+            <div class ="row" >
+                <div class= "col col-12 w-100 mb-5">
+                    <?php  the_post_thumbnail(); ?>
+                </div>
+                <div class="col width-12">
+                    <?php the_content(); ?>
                 </div>
             </div>
         </div>

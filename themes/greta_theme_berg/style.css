@@ -150,13 +150,13 @@ height: 900px;
     background-image: url(images/fond_contact.jpg);
 }
 
-.image_a_propos img{
-    height: 10px;
+.a_propos img{
+    height: auto;
     width: 100%;
 }
 
-.mentions-legales img {
-    height: 100%;
+.mentions-legales img, .politique-confidentialite img {
+   height: auto;
     width: 100%;
 }
 
