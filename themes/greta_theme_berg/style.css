@@ -201,6 +201,50 @@ height: 900px;
     color: orangered;
     
 }
+.carousel{
+    width: 50%;
+}
+
+
+@media(max-width: 430px){
+    .propos img{
+        width: 400px;
+        height: 300px;
+    }
+    .propos h2{
+        font-size: 32px;
+    }
+    .partner h2{
+        font-size: 32px;
+    }
+    .actu h2{
+        font-size: 32px;
+    }
+    .title__formations{
+        font-size: 32px;
+    }
+    .card{
+        padding-bottom: 5px;
+    }
+    .carousel{
+        width: 100%;
+    }
+    .partner img{
+        width: 100%;
+    }
+}
+@media(min-width: 430px) and (max-width: 1200px){
+   .nav-link{
+    font-size: 16px;
+    margin: 20px;
+   } 
+   .carousel{
+    width: 100%;
+}
+.partner img{
+    width: 100%;
+}
+}
 .couleur_btn{
     background-color: #ff4500;
 }
