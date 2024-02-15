@@ -32,16 +32,14 @@ header{
    background-size: cover;
 }
 
-footer ul li{
-    list-style: none;
+
+.footlink a{
     
-}
-footer ul li a{
-    text-decoration: none;
     color:black;
 }
 footer{
     background-color: rgba(38, 38, 36, 0.087);
+    font-size: 20px;
 }
 .liste_actu img {
     width: 100%;
