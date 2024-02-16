@@ -11,7 +11,7 @@ Version: 1.0
 
 
 
-header{
+header, .btn_liste_form{
     font-family: 'Mina', sans-serif;
     font-size: 18px;
     font-weight: bold;
@@ -191,6 +191,7 @@ height: 900px;
 .partner h2{
     font-size: 48px;
 }
+
 .buttonform{
     color: orangered;
     margin-left: 150px;
@@ -199,6 +200,70 @@ height: 900px;
     font-size: 40px;
     color: orangered;
     
+}
+.carousel{
+    width: 50%;
+}
+
+
+@media(max-width: 430px){
+    .propos img{
+        width: 400px;
+        height: 300px;
+    }
+    .propos h2{
+        font-size: 32px;
+    }
+    .partner h2{
+        font-size: 32px;
+    }
+    .actu h2{
+        font-size: 32px;
+    }
+    .title__formations{
+        font-size: 32px;
+    }
+    .card{
+        padding-bottom: 5px;
+    }
+    .carousel{
+        width: 100%;
+    }
+    .partner img{
+        width: 100%;
+    }
+}
+@media(min-width: 430px) and (max-width: 1200px){
+   .nav-link{
+    font-size: 16px;
+    margin: 20px;
+   } 
+   .carousel{
+    width: 100%;
+}
+.partner img{
+    width: 100%;
+}
+}
+.couleur_btn{
+    background-color: #ff4500;
+}
+
+.info_une_formation ul{
+    list-style: none;
+}
+
+.info_une_formation li{
+    list-style: none;
+    padding-top: 10px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='orangered' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='orangered' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
 
 

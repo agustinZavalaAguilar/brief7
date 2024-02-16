@@ -42,7 +42,7 @@ $index = 0
 ?>
 
 <section class="formations d-flex justify-content-center">
-  <div id="carouselExampleControls" class="carousel slide w-50 d-flex justify-content-center" data-bs-ride="carousel">
+  <div id="carouselExampleControls" class="carousel slide d-flex justify-content-center" data-bs-ride="carousel">
   <div class="carousel-inner text-align caroussel-custom ">
   <?php if( $my_query->have_posts() ) : while( $my_query->have_posts() ) : $my_query->the_post(); ?>
     <?php 
@@ -127,7 +127,7 @@ $index = 0 ?>
             }else{
                 $extrait = get_the_excerpt()."[...]" ;
             } ?>
-            <div class="col-sm-12 col-md-4 carte_actu">
+            <div class="col-sm-12 col-md-4 carte_actu mb-3">
           
                 <div class= "card h-100 d-flex  justify-content-between p-3" > 
                      <h5 class="card-title text-center"><?php the_title() ?></h5>

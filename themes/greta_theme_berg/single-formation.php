@@ -32,7 +32,7 @@ $description = get_the_content();
 
 <!---------titre-------------------------------->
 <body>  
-    <div class='container'>
+    <div class='container '>
         <div class="row my-4">
             <div class="col-12">
                 <h2 class=" mina-regular m-0 d-flex justify-content-center align-items-center  border-3 border-bottom border-black pb-3"><i class="fa-solid fa-graduation-cap pe-4 "></i><?php the_title() ?></h2>
@@ -52,13 +52,23 @@ $description = get_the_content();
             </section>
         </div>
 <!---------List détails-------------------------->
-        <div class="col-4">
+        <div class="col-4 py- info_une_formation">
         <ul>
-            <div class="d-flex justify-content-center "><?php the_post_thumbnail() ?></div>
+            <div class="d-flex justify-content-center py-3 "><?php the_post_thumbnail() ?></div>
+            <li>
+            <i class="fa-solid fa-folder pe-4"></i>
+                <?php echo $type ?>
+            </li>
+            <li>
+                <i class="fa-solid fa-briefcase pe-4"></i>
+                <?php echo $reference ?>
+            </li>
+            
             <?php 
+            
             if (!empty($debut) && !empty($fin)) { ?>
                 <li>
-                    <i class="fa-regular fa-calendar-days"></i>
+                    <i class="fa-regular fa-calendar-days pe-4"></i>
                     <?php 
                     echo  $debut . ' au ' . $fin ;
                     ?>
@@ -70,10 +80,27 @@ $description = get_the_content();
             ?>
 
             <li>
-                <i class="fa-solid fa-school-flag"></i>
-                <?= 'Lieu de formation: ' . $ville . ', ' . $lieu ?></li>
-            <li><?= 'Contact: ' . $contactPrenom . ' ' . $contactNom ?></li>
-            <li><?= 'Téléphone: ' . $tel ?></li>
+                <i class="fa-solid fa-school-flag pe-4"></i>
+                <?=  $ville . ', ' . $lieu ?>
+            </li>
+            
+            <li>
+                <i class="fa-solid fa-address-card pe-4"></i>
+                <?=   $contactPrenom . ' ' . $contactNom ?>
+            </li>
+
+            <li>
+            <?php 
+            $Tab_num = str_split( $tel,2);
+            
+            for($index = 0 ; $index < count($Tab_num) ; $index++){
+                $Tab_num[$index] = $Tab_num[$index]." ";
+            }
+            
+            $tel_espace = implode($Tab_num)
+            ?>
+            <i class="fa-solid fa-phone pe-4"></i> 
+            <a href="tel:<?= $tel ?>"><?= $tel_espace ?></a></li>
             <?php 
             if(!empty($trombiPromo)){
                 echo '<a href=" ' .  $trombiPromo . ' "> '; 
@@ -82,9 +109,17 @@ $description = get_the_content();
             }
             ?>    
         </ul>
-        <a href="contact.php">
-            <button type="submit">S'inscrire</button>
-        </a>
+        <div class="d-flex justify-content-around ">
+        <div class="d-flex justify-content-center ">
+            <a href="<?php echo $urlformation ?>">
+                <button class="btn couleur_btn" type="button p-4 "><i class="fa-solid fa-link"></i>fiche formation maforpro</button>
+            </a>
+        </div>
+        <div class="d-flex justify-content-center ">
+            <a href="<?php echo bloginfo('url')."/contact" ?>">
+                <button class="btn couleur_btn" type="button p-4 ">Contact</button>
+            </a>
+        </div>
         </div>
         </div>
     </div>
