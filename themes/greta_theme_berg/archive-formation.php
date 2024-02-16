@@ -81,17 +81,13 @@ $index = 0 ;
    <?php //  echo  $formations[$index]['acf']['intitule_de_la_formation'];
     // echo  $formations[$index]['acf']['date_debut'];
     // echo  $formations[$index]['acf']['date_fin_formation'];
-    ?> <br> <?php/*
+    ?> <br> <!--
     the_post_thumbnail();
     the_excerpt();
     $index = $index+1;
 
 endwhile;
 endif;
-*/ ?>
-    </body>
-</html>
-
-
-?>
+*/ ?>-->
+<?php include('footer.php') ?>
 

@@ -123,5 +123,5 @@ $description = get_the_content();
         </div>
         </div>
     </div>
-</body>
-</html>
+
+    <?php include('footer.php') ?>
