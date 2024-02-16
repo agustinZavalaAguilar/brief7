@@ -8,7 +8,7 @@
     Template Post Type:  page
 */
 
-$url = "http://localhost/brief7/wp-json/wp/v2/formation";
+$url = "http://greta.2.lopia.fr/wp-json/wp/v2/formation";
 
 $data = file_get_contents($url);
 
