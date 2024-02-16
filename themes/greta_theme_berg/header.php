@@ -32,22 +32,29 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
+
+                <!--Construction de liens ci-dessous:
+                -esc_url : Nettoie les URLs pour éviter les problèmes de sécurité.
+                -home_url : Récupère l'URL de la page d'accueil d'un site WordPress.
+                -l'URL est construite en utilisant la fonction home_url avec le chemin /contact, 
+                assurant que le lien est correctement formé sans avoir à concaténer manuellement les parties de l'URL.-->
+
                 <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="<?php echo bloginfo('url')."/home.php"?>">Page d'accueil</a>
+                    <a class="nav-link" href="<?= esc_url( home_url() ); ?>">Page d'accueil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo bloginfo('url')."/actualites"?>">Actualités</a>
+                    <a class="nav-link" href="<?= esc_url( home_url( '/actualites' ) ); ?>">Actualités</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo bloginfo('url')."/a-propos.php"?>">A Propos</a>
+                    <a class="nav-link"  href="<?= esc_url( home_url( '/a-propos' ));?>">A Propos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo bloginfo('url')."/formations"?>"">Formations</a>
+                    <a class="nav-link" href="<?= esc_url( home_url( '/formations' ) );?>">Formations</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link me-4" href="<?php echo bloginfo('url')."/contact"?>"">Contact</a>
-                </li>      
+                    <a class="nav-link me-4" href="<?= esc_url( home_url( '/contact' ) ); ?>">Contact</a>
+                </li>     
                 </ul>
             </div>
         </nav>
