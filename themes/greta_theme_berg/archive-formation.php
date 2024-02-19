@@ -34,8 +34,8 @@ $index = 0 ;
         <h1 class=" p-4 pb-2 border-bottom  border-black border-5  mina-regular "> <i class="fa-solid fa-graduation-cap"></i> Nos formations </h1>
         
         <?php if( $my_query->have_posts() ) : while( $my_query->have_posts() ) : $my_query->the_post(); ?>
-        <div class="row fond-ecran-custom mt-5 rounded-bottom  ">
-            <div class="col-3 d-flex justify-content-center align-items-center py-4 ">
+        <div class=" section__img row fond-ecran-custom mt-5 rounded-bottom w-100 ">
+            <div class=" col-3 d-flex justify-content-center align-items-center py-4  ">
             
                 <?php  the_post_thumbnail(); ?>
             </div>
