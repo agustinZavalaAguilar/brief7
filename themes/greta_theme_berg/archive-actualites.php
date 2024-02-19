@@ -7,12 +7,6 @@
     Template Post Type:  page
 */
 
-$url = "http://localhost/brief7/wp-json/wp/v2/formation";
-
-$data = file_get_contents($url);
-
-$formations = json_decode($data , true);
-
 
 /*Recupère les champs créees dans ACF */
 
@@ -44,7 +38,7 @@ $index = 0 ;
 
 
                         }else{
-                            the_post_thumbnail();
+                            the_post_thumbnail('full');
                         } ?>
                     <div class="d-flex flex-row justify-content-between align-items-center border-bottom  border-black border-2 p-3">
                         <h4 class="pe-2"> <?php  the_title(); ?> </h4> 
@@ -72,7 +66,7 @@ $index = 0 ;
    <?php //  echo  $formations[$index]['acf']['intitule_de_la_formation'];
     // echo  $formations[$index]['acf']['date_debut'];
     // echo  $formations[$index]['acf']['date_fin_formation'];
-    ?> <br> <?php/*
+    ?> <br> <!--/*
     the_post_thumbnail();
     the_excerpt();
     $index = $index+1;
@@ -81,8 +75,8 @@ endwhile;
 endif;
 */ ?>
     </body>
-</html>
+</html>-->
 
 
-?>
+<?php include('footer.php') ?>
 

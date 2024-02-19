@@ -17,10 +17,27 @@ header, .btn_liste_form{
     font-weight: bold;
 
 } 
+
 .nav-link{
     color: orangered;
+    text-decoration: none;
    
 }
+.menu-principal li {
+    list-style: none;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.menu-principal div{
+    display: flex ;
+
+}
+.menu-principal ul{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+}
+
 
 .couleur-jaune-custom {
     background-color: #f5ed21;
@@ -41,11 +58,18 @@ footer{
     background-color: rgba(38, 38, 36, 0.087);
     font-size: 20px;
 }
+
+.liste_formation img{
+    width: 205px;
+    height: 105px;
+}
+
 .liste_actu img {
     width: 100%;
     height: 200px;
 
 }
+*
 
 .liste_actu  {
     font-size: 40px;
@@ -68,6 +92,11 @@ footer{
       
       
     
+}
+
+.menu-principal a{
+    color: orangered;
+    text-decoration: none;
 }
  .hero_banner img{
 width: 100%;
@@ -232,6 +261,18 @@ height: 900px;
     .partner img{
         width: 100%;
     }
+    header img{
+        height: 30px;
+        width: 100px;
+    }
+  .section__img{
+    flex-direction: column;
+    align-items: center;
+  }
+  .info_une_formation{
+    
+   align-items: center;
+  }
 }
 @media(min-width: 430px) and (max-width: 1200px){
    .nav-link{
@@ -244,6 +285,15 @@ height: 900px;
 .partner img{
     width: 100%;
 }
+header img{
+    height: 50px;
+    width: 86px;
+}
+.section__img{
+    flex-direction: column;
+    align-items: center;
+  }
+
 }
 .couleur_btn{
     background-color: #ff4500;
@@ -256,6 +306,7 @@ height: 900px;
 .info_une_formation li{
     list-style: none;
     padding-top: 10px;
+    
 }
 
 .carousel-control-prev-icon {
@@ -265,5 +316,22 @@ height: 900px;
 .carousel-control-next-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='orangered' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
+@media (max-width: 768px){
+
+    .menu-principal ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-principal li {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+
+  
+}
+
+
+
 
 
