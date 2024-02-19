@@ -9,14 +9,26 @@ Requires at least: WordPress 5.0
 Version: 1.0
 */
 
-
+.main{
+    min-height: calc(100vh - 233px);
+}
 
 header, .btn_liste_form{
     font-family: 'Mina', sans-serif;
     font-size: 18px;
     font-weight: bold;
+   
 
 } 
+header{
+    position : fixed;
+    z-index: 5;
+    background-color:  white;
+}
+
+.espace-header{
+    height: 60px;
+}
 
 .nav-link{
     color: orangered;
@@ -25,8 +37,9 @@ header, .btn_liste_form{
 }
 .menu-principal li {
     list-style: none;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+
 }
 .menu-principal div{
     display: flex ;
@@ -36,6 +49,7 @@ header, .btn_liste_form{
     display: flex;
     flex-direction: row;
     margin-bottom: 0;
+    margin-right: 20px;
 }
 
 
@@ -97,6 +111,7 @@ footer{
 .menu-principal a{
     color: orangered;
     text-decoration: none;
+    white-space: nowrap;
 }
  .hero_banner img{
 width: 100%;
@@ -153,6 +168,12 @@ height: 900px;
 
 }
 
+
+.info_une_formation img{
+    width: 380px;
+    height: 200px;
+}
+
 .actu__title{
     font-size: 48px;
 }
@@ -169,6 +190,7 @@ height: 900px;
 
 .couleur_orange_rouge {
     color: orangered;
+
 }
 
 .justifier-contenu-custom p {
@@ -190,6 +212,12 @@ height: 900px;
 
     background-image: url(images/fond_contact.jpg);
 }
+.couleur_orange_rouge{
+    background-color: orangered;
+    color: white;
+    border-radius: 10px;
+    border :0;
+}
 
 .a_propos img{
     height: auto;
@@ -201,7 +229,7 @@ height: 900px;
     width: 100%;
 }
 .caroussel-custom img{
-    min-width: 100%;
+    width: 100%;
     height: 500px;
 
 }
@@ -316,7 +344,7 @@ header img{
 .carousel-control-next-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='orangered' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
-@media (max-width: 768px){
+@media (max-width: 991px){
 
     .menu-principal ul{
         display: flex;

@@ -1,6 +1,6 @@
 <?php include('header.php') ?>
 
-<section class="uneActu">
+<section class="uneActu mt-2">
 
     <div class="container">
         <div class = "d-flex justify-content-between flex  border-bottom  border-black border-5 p-3  ">
@@ -11,7 +11,7 @@
 
 
                             }else{
-                                the_post_thumbnail();
+                                the_post_thumbnail('full');
                             } ?>
         </div>
         <div class="pt-5">

@@ -32,7 +32,7 @@ $description = get_the_content();
 
 <!---------titre-------------------------------->
 <body>  
-    <div class='container '>
+    <div class='container mt-2'>
         <div class="row my-4">
             <div class="col-12">
                 <h2 class=" mina-regular m-0 d-flex justify-content-center align-items-center  border-3 border-bottom border-black pb-3"><i class="fa-solid fa-graduation-cap pe-4 "></i><?php the_title() ?></h2>
@@ -54,7 +54,7 @@ $description = get_the_content();
 <!---------List détails-------------------------->
         <div class="col-12 col-md-4   info_une_formation">
         <ul>
-            <div class=" info__img d-flex justify-content-center py-3 "><?php the_post_thumbnail() ?></div>
+            <div class=" info__img d-flex justify-content-center py-3 "><?php the_post_thumbnail('full') ?></div>
             <li>
             <i class="fa-solid fa-folder pe-4"></i>
                 <?php echo $type ?>
