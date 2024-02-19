@@ -29,7 +29,7 @@ $index = 0 ;
 ?>
 
 
-<section class="main section">
+<section class="main section liste_formation">
     <div class="container">
         <h1 class=" p-4 pb-2 border-bottom  border-black border-5  mina-regular "> <i class="fa-solid fa-graduation-cap"></i> Nos formations </h1>
         
@@ -37,7 +37,7 @@ $index = 0 ;
         <div class=" section__img row fond-ecran-custom mt-5 rounded-bottom w-100 ">
             <div class=" col-3 d-flex justify-content-center align-items-center py-4  ">
             
-                <?php  the_post_thumbnail(); ?>
+                <?php  the_post_thumbnail('full'); ?>
             </div>
             <div class="col-9 d-flex flex-column  justify-content-between p-0">
                 

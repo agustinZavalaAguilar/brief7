@@ -58,6 +58,12 @@ footer{
     background-color: rgba(38, 38, 36, 0.087);
     font-size: 20px;
 }
+
+.liste_formation img{
+    width: 205px;
+    height: 105px;
+}
+
 .liste_actu img {
     width: 100%;
     height: 200px;

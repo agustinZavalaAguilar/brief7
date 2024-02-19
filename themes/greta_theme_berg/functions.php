@@ -7,7 +7,7 @@ add_theme_support( 'post-thumbnails' );
 add_theme_support( 'title-tag' );
 
 //Modifier la taille des images mis en avant 
-set_post_thumbnail_size( 200, 200, true );
+
 
 
 
