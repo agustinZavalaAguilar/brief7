@@ -44,7 +44,7 @@
                     <i class="fa-solid fa-envelope  pe-5"></i>
                     <?php the_field('adressse_e-mail_dev') ?>
                 </div>
-                <div class="d-flex align-items-center justify-content-start  my-3">
+                <div class="d-flex  align-items-center justify-content-start  my-3">
                     <i class="fa-solid fa-phone pe-5"></i>
                     <?php the_field('tel_lozere_dev') ?>
                 </div>
@@ -53,6 +53,7 @@
 
         </div>
     </div>
+</div>
 
 
 
