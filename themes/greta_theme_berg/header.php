@@ -31,7 +31,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse menu-principal" id="navbarNav">
 
                 <!--Construction de liens ci-dessous:
                 -esc_url : Nettoie les URLs pour éviter les problèmes de sécurité.
@@ -39,9 +39,9 @@
                 -l'URL est construite en utilisant la fonction home_url avec le chemin /contact, 
                 assurant que le lien est correctement formé sans avoir à concaténer manuellement les parties de l'URL.-->
 
-                <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="<?= esc_url( home_url() ); ?>">Page d'accueil</a>
+               <?php wp_nav_menu(array( 'theme_location' => 'main' )); ?>
+  
+                 <!--   <a class="nav-link" href="<?= esc_url( home_url() ); ?>">Page d'accueil</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="<?= esc_url( home_url( '/actualites' ) ); ?>">Actualités</a>
@@ -54,7 +54,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link me-4" href="<?= esc_url( home_url( '/contact' ) ); ?>">Contact</a>
-                </li>     
+                </li>    --> 
                 </ul>
             </div>
         </nav>

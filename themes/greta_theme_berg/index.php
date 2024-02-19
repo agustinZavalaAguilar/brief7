@@ -14,7 +14,7 @@ include('header.php')
         <div class="row">
         <h2 class="text-center text-uppercase mt-4 mb-5">Qui sommes nous ?</h2>
             <div class="col-sm-12 col-md-6 animate__animated  animate__backInLeft animate__delay-1s ">
-                <img  src="<?php echo bloginfo('template_directory')."/images/cartegard.png"?>" alt="">
+                <img class="w-100" src="<?php echo bloginfo('template_directory')."/images/cartegard.png"?>" alt="">
             </div>
             <div class="col-sm-12 col-md-6 animate__animated animate__backInRight animate__delay-1s">
               <h5 class="text-center">Notre histoire</h5>
