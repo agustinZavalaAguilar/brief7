@@ -31,14 +31,14 @@ $index = 0 ;
         <div class="row d-flex flex-row justify-content-center "> 
       <?php if( $my_query->have_posts() ) : while( $my_query->have_posts() ) : $my_query->the_post(); ?>
            
-                <div class="col-12 col-md-4 d-flex flex-column  justify-content-between  my-5 "> 
+                <div class="col-4 d-flex flex-column  justify-content-between  my-5 "> 
                     <?php if (empty(get_the_post_thumbnail())){ ?>
                             <img  width="100%" height="200" src="<?php echo bloginfo('template_directory')."/images/image_actu_par_défaut.png"?>"  />
                             <?php 
 
 
                         }else{
-                            the_post_thumbnail();
+                            the_post_thumbnail('full');
                         } ?>
                     <div class="d-flex flex-row justify-content-between align-items-center border-bottom  border-black border-2 p-3">
                         <h4 class="pe-2"> <?php  the_title(); ?> </h4> 
