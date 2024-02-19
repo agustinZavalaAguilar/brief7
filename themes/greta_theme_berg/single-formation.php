@@ -40,7 +40,7 @@ $description = get_the_content();
         </div>
     <div class='row d-flex flex-column flex-md-row align-items-start'>
 
-        <div class="col-8">
+        <div class="col-12 col-md-8">
     
                 
             </h2>
@@ -52,9 +52,9 @@ $description = get_the_content();
             </section>
         </div>
 <!---------List détails-------------------------->
-        <div class="col-4 info_une_formation">
+        <div class="col-12 col-md-4   info_une_formation">
         <ul>
-            <div class="d-flex justify-content-center py-3 "><?php the_post_thumbnail() ?></div>
+            <div class=" info__img d-flex justify-content-center py-3 "><?php the_post_thumbnail() ?></div>
             <li>
             <i class="fa-solid fa-folder pe-4"></i>
                 <?php echo $type ?>

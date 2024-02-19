@@ -23,8 +23,8 @@
 <body>
 <header class="w-100">
 <div class="row m-0 p-0">
-    <div class="col-sm w-50">
-      <img class="w-25 ms-4" src="<?php echo bloginfo('template_directory')."/images/logo.png"?>" alt="occitanie">
+    <div class=" col-sm w-50 ">
+      <img class=" w-25 ms-4" src="<?php echo bloginfo('template_directory')."/images/logo.png"?>" alt="occitanie">
     </div>
     <div class="col-sm w-50 d-flex  justify-content-end">
             <nav class=" navbar navbar-expand-lg">
