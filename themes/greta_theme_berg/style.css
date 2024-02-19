@@ -28,9 +28,14 @@ header, .btn_liste_form{
     margin-right: 10px;
     margin-left: 10px;
 }
+.menu-principal div{
+    display: flex ;
+
+}
 .menu-principal ul{
     display: flex;
     flex-direction: row;
+    margin-bottom: 0;
 }
 
 
@@ -80,6 +85,11 @@ footer{
       
       
     
+}
+
+.menu-principal a{
+    color: orangered;
+    text-decoration: none;
 }
  .hero_banner img{
 width: 100%;
@@ -305,9 +315,13 @@ header img{
         display: flex;
         flex-direction: column;
     }
-    .menu-principal li{
-        
+    .menu-principal li {
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
+
+
+  
 }
 
 

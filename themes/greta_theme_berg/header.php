@@ -27,8 +27,8 @@
       <img class=" w-25 ms-4" src="<?php echo bloginfo('template_directory')."/images/logo.png"?>" alt="occitanie">
     </div>
     <div class="col-sm w-50 d-flex  justify-content-end">
-            <nav class=" navbar navbar-expand-lg">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class=" navbar navbar-expand-lg d-flex  justify-content-end">
+            <button class="navbar-toggler  " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse menu-principal" id="navbarNav">
