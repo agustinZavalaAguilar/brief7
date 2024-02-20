@@ -9,6 +9,7 @@ $debut = get_field('date_debut');
 $fin = get_field('date_fin_formation');
 $dureeFormation = get_field('decrire_duree_de_la_formation');
 $ville = get_field('ville_de_formation');
+$email = get_field('e-mail_de_contact');
 $lieu = get_field('lieu_de_formation');
 $contactPrenom = get_field('prenom_contact');
 $contactNom = get_field('nom_du_contact');
@@ -87,6 +88,10 @@ $description = get_the_content();
             <li>
                 <i class="fa-solid fa-address-card pe-4"></i>
                 <?=   $contactPrenom . ' ' . $contactNom ?>
+            </li>
+            <li>
+                <i class="fa-solid fa-envelope pe-4"></i>
+                <a href="mailto:<?=   $email ?>"><?= $email ?></a></li>
             </li>
 
             <li>

@@ -11,10 +11,7 @@
     </div>
 
     <div class="text-center p-2 text-black">
-
-        <img src="<?php echo bloginfo('template_directory')."/ressources/gvt_nom.png"?>">        
-        
-
+        <p>© 2024 Copyright By Greta Von Teese Web Studio</p>
     </div>
     <!-- Copyright -->
     
