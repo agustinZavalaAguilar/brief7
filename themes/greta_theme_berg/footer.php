@@ -10,8 +10,7 @@
         <a class="d-flex ms-3" href="https://www.linkedin.com/pulse/le-greta-cfa-gard-loz%C3%A8re-lab%C3%A9lis%C3%A9-greta-occitanie"target="_blank"><i class="bi bi-linkedin"></i></a>
     </div>
 
-    <div class="text-center p-2 text-black">
-        <img src="./ressources/gvt_nom.png">        
+    <div class="text-center p-2 text-black">     
         <p>© 2024 Copyright By Greta Von Teese Web Studio</p>
     </div>
     <!-- Copyright -->
