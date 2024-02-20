@@ -53,7 +53,7 @@ $description = get_the_content();
             </section>
         </div>
 <!---------List détails-------------------------->
-        <div class="col-12 col-md-4   info_une_formation">
+        <div class="col-12 col-md-4  mb-5 info_une_formation">
         <ul>
             <div class=" info__img d-flex justify-content-center py-3 "><?php the_post_thumbnail('full') ?></div>
             <li>
