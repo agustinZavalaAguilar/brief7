@@ -21,7 +21,7 @@
     <script src="https://kit.fontawesome.com/0a3766d4f1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<header class="w-100">
+<header class="w-100 shadow ">
 <div class="row m-0 p-0">
     <div class=" col-sm w-50 ">
       <img class=" w-25 ms-4" src="<?php echo bloginfo('template_directory')."/images/logo.png"?>" alt="occitanie">
