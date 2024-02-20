@@ -11,7 +11,7 @@
     <div class="container mentions-legales">
         <div class ="row" >
             <div class= "col col-12 w-100 mb-5">
-                <?php  the_post_thumbnail(); ?>
+                <?php  the_post_thumbnail('full'); ?>
             </div>
             <div class="col width-12">
                 <?php the_content(); ?>

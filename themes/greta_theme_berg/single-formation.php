@@ -9,6 +9,7 @@ $debut = get_field('date_debut');
 $fin = get_field('date_fin_formation');
 $dureeFormation = get_field('decrire_duree_de_la_formation');
 $ville = get_field('ville_de_formation');
+$email = get_field('e-mail_de_contact');
 $lieu = get_field('lieu_de_formation');
 $contactPrenom = get_field('prenom_contact');
 $contactNom = get_field('nom_du_contact');
@@ -32,7 +33,7 @@ $description = get_the_content();
 
 <!---------titre-------------------------------->
 <body>  
-    <div class='container '>
+    <div class='container mt-2'>
         <div class="row my-4">
             <div class="col-12">
                 <h2 class=" mina-regular m-0 d-flex justify-content-center align-items-center  border-3 border-bottom border-black pb-3"><i class="fa-solid fa-graduation-cap pe-4 "></i><?php the_title() ?></h2>
@@ -52,9 +53,9 @@ $description = get_the_content();
             </section>
         </div>
 <!---------List détails-------------------------->
-        <div class="col-12 col-md-4   info_une_formation">
+        <div class="col-12 col-md-4  mb-5 info_une_formation">
         <ul>
-            <div class=" info__img d-flex justify-content-center py-3 "><?php the_post_thumbnail() ?></div>
+            <div class=" info__img d-flex justify-content-center py-3 "><?php the_post_thumbnail('full') ?></div>
             <li>
             <i class="fa-solid fa-folder pe-4"></i>
                 <?php echo $type ?>
@@ -87,6 +88,10 @@ $description = get_the_content();
             <li>
                 <i class="fa-solid fa-address-card pe-4"></i>
                 <?=   $contactPrenom . ' ' . $contactNom ?>
+            </li>
+            <li>
+                <i class="fa-solid fa-envelope pe-4"></i>
+                <a href="mailto:<?=   $email ?>"><?= $email ?></a></li>
             </li>
 
             <li>

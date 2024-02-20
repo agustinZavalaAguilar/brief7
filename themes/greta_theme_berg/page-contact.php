@@ -1,12 +1,12 @@
 <?php include ('header.php') ?>
 
-<div class="container ">
+<div class="container  mt-2">
 <h1 class=" p-4 pb-2 border-bottom  border-black border-5  mina-regular "><i class="fa-regular fa-message"></i> Nous contacter</h1>
 <div class="row d-flex justify-content-between align-items-center fond_contact   ">
-    <div class ="col-8 formulaire_contact">
+    <div class ="col-12 col-md-8  formulaire_contact">
         <?php the_content() ?>
     </div>
-        <div class="col-4 info_contact ps-5">
+        <div class="col-12 col-md-4 info_contact ps-5">
             <h4>Pour contacter le Greta de la Lozère :</h4>
             <div class="ps-4 my-4 ">
                 <div class="d-flex align-items-center justify-content-start  my-3">
@@ -46,7 +46,16 @@
                 </div>
                 <div class="d-flex  align-items-center justify-content-start  my-3">
                     <i class="fa-solid fa-phone pe-5"></i>
-                    <?php the_field('tel_lozere_dev') ?>
+                    <?php 
+            $Tab_num = str_split( get_field('tel_lozere_dev'),2);
+            
+            for($index = 0 ; $index < count($Tab_num) ; $index++){
+                $Tab_num[$index] = $Tab_num[$index]." ";
+            }
+            
+            $tel_espace = implode($Tab_num)
+            ?>
+                    <?php echo $tel_espace ?>
                 </div>
             </div>
 
